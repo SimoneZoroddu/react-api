@@ -15,9 +15,6 @@ export default function AppHeader(){
             Wonderful Cast
         </div>
 
-
-
-        
         </>
     )
 }
