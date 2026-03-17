@@ -2,6 +2,6 @@
 @import url('bootstrap-icons');
 
 
-#bg_cards{
+#bg_cards, #bg_header {
     background-color: #1e1e2f;
 }
