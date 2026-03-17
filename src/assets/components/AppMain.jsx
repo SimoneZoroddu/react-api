@@ -56,11 +56,15 @@ export default function AppMain() {
                                                 {actor.known_for.join(', ')}
                                             </div> 
                                             :
+                                            <div className="text-danger fst-italic py-2">
+                                                <div className="fw-bolder">Know for:</div>
+                                                {actor.most_famous_movies.join(', ')}
+                                            </div> 
+                                            }
                                             <div className="text-warning fst-italic">
                                                 <div className="fw-bolder">Awards:</div>
-                                                {actor.most_famous_movies.join(', ')}
+                                                {actor.awards.join(', ')}
                                             </div>
-                                            }
                                         </div>
                                     </div>
                                 </div>
