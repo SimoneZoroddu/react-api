@@ -48,19 +48,10 @@ export default function AppMain() {
                                     <div className="card-title fst-italic">{actor.birth_year}    {actor.nationality}</div>
                                     <div className="card-body">
                                         <div className="card-text">{actor.biography}
-                                            {
-                                            actor.known_for 
-                                            ? 
                                             <div className="text-danger fst-italic py-2">
                                                 <div className="fw-bolder">Know for:</div>
-                                                {actor.known_for.join(', ')}
-                                            </div> 
-                                            :
-                                            <div className="text-danger fst-italic py-2">
-                                                <div className="fw-bolder">Know for:</div>
-                                                {actor.most_famous_movies.join(', ')}
-                                            </div> 
-                                            }
+                                                {(actor.known_for || actor.most_famous_movies).join(', ')}
+                                            </div>
                                             <div className="text-warning fst-italic">
                                                 <div className="fw-bolder">Awards:</div>
                                                 {actor.awards.join(', ')}
