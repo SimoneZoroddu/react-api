@@ -10,13 +10,15 @@ function App() {
 
   const allActors = [...actros, ...actresses]
   
-  allActors.sort(function (a, b) {
+  allActors.sort((a, b) => a.name.localeCompare(b.name));
+
+ /*  allActors.sort(function (a, b) {
     let x = a.name.toLowerCase();
     let y = b.name.toLowerCase();
     if (x < y) { return -1; }
     if (x > y) { return 1; }
     return 0;
-  })
+  }) */
 
   function getActors() {
 
